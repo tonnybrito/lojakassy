@@ -1,0 +1,27 @@
+<div id="products">
+  <% @products.in_groups_of(4, false).each do |products_group| %>
+
+    <div class="row">
+      <% products_group.each do |product| %>
+        <div class="col-md-3">
+          <div class="product">
+            <%= image_tag product[:image] %>
+            <div class="category">
+              <span class="label label-warning"><%= product[:category] %></span>
+            </div>
+            <div class="title">
+              <a href="#"><%= product[:title] %></a>
+            </div>
+            <div class="price">
+              <%= number_to_currency product[:price] %>
+            </div>
+            <div class="buy">
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  <% end %>
+</div>
