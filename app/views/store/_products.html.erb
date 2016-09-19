@@ -5,15 +5,15 @@
       <% products_group.each do |product| %>
         <div class="col-md-3">
           <div class="product">
-            <%= image_tag product[:image] %>
+            <%= image_tag product.image %>
             <div class="category">
-              <span class="label label-warning"><%= product[:category] %></span>
+              <span class="label label-warning"><%= product.category %></span>
             </div>
             <div class="title">
-              <a href="#"><%= product[:title] %></a>
+              <a href="#"><%= product.title %></a>
             </div>
             <div class="price">
-              <%= number_to_currency product[:price] %>
+              <%= number_to_currency product.price %>
             </div>
             <div class="buy">
               <a href="#" class="btn btn-danger">Comprar</a>
