@@ -1,0 +1,21 @@
+<div class="container">
+  <h1><%= @product.title %></h1>
+
+  <div id="product" class="row">
+    <div class="col-md-6">
+      <%= image_tag @product.image %>
+    </div>
+    <div class="col-md-6">
+      <div class="price">
+        <%= number_to_currency @product.price %>
+      </div>
+      <div class="category">
+        <span class="label label-warning"><%= @product.category %></span>
+      </div>
+      <div class="description">
+        <%= @product.description %>
+      </div>
+    </div>
+  </div>
+</div>
+

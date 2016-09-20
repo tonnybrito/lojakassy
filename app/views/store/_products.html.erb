@@ -10,13 +10,13 @@
               <span class="label label-warning"><%= product.category %></span>
             </div>
             <div class="title">
-              <a href="#"><%= product.title %></a>
+              <%= link_to product.title, controller: :store, action: :product, id: product.id %>
             </div>
             <div class="price">
               <%= number_to_currency product.price %>
             </div>
             <div class="buy">
-              <a href="#" class="btn btn-danger">Comprar</a>
+              <%= link_to 'Comprar', {controller: :store, action: :product, id: product.id}, class: 'btn btn-danger' %>
             </div>
           </div>
         </div>

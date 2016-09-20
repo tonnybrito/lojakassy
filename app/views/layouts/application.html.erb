@@ -42,7 +42,9 @@
       <div class="row" id="categories">
         <div class="col-sm-offset-1 col-sm-11">
           <ul class="nav nav-pills">
-            <li><a href="#">Início</a></li>
+            <li class="<%= 'active' if controller_name == 'store' && action_name == 'index' %>">
+              <%= link_to 'Início', root_path %>
+            </li>
             <li><a href="#">Telefones</a></li>
             <li><a href="#">Eletrônicos</a></li>
             <li><a href="#">Quadros</a></li>
