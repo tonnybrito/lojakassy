@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'produtos/:id', to: 'store#product'
   get 'categoria', to: 'store#category'
+  get 'busca', to: 'store#search'
   # get 'store/index'
 
   root 'store#index'

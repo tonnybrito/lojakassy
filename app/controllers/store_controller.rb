@@ -10,4 +10,8 @@ class StoreController < ApplicationController
   def category
     @products = Product.where(category: params[:c]).all
   end
+
+  def search
+    @products = Product.search(params[:q])
+  end
 end

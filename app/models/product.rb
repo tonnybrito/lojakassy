@@ -11,4 +11,8 @@ class Product < ApplicationRecord
     categories = records.map { |p| p.category }
     categories.sort
   end
+
+  def self.search(query)
+    Product.where('title LIKE ? OR category LIKE ?', "%#{query}%", "%#{query}%")
+  end
 end

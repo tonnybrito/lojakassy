@@ -30,12 +30,15 @@
         </div>
 
         <div class="col-sm-5 hidden-xs">
-          <form action="#" id="top-search" class="form-inline">
+          <%= form_tag({controller: :store, action: :search}, {method: 'get', id: 'top-search', class: 'form-inline'}) do %>
             <div class="form-group">
-              <input type="text" class="form-control input-lg" placeholder="Camiseta, relógio, ...">
+              <%= text_field_tag 'q', params['q'], class: 'form-control input-lg', placeholder: 'Camiseta, relógio, ...' %>
+              &nbsp;
+              <%= button_tag type: :submit, class: 'btn btn-default btn-lg' do %>
+                Buscar
+              <% end %>
             </div>
-            <button type="submit" class="btn btn-default btn-lg">Buscar</button>
-          </form>
+          <% end %>
         </div>
       </div>
 
