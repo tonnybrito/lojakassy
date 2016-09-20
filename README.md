@@ -1,24 +1,32 @@
-# README
+# Instruções
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Iniciar o MySQL
 
-Things you may want to cover:
+```shell
+sudo service mysql start
+```
 
-* Ruby version
+## Copiar a aplicação para o seu ambiente
 
-* System dependencies
+```shell
+git clone https://github.com/estagioemprogramacao/store.git
+```
 
-* Configuration
+## Preparar a aplicação
 
-* Database creation
+```shell
+cd store
+bundle install  # instala gems
+rake db:create  # cria banco de dados
+rake db:migrate # cria estrutura (tabelas, índices) do banco de dados
+```
 
-* Database initialization
+## Executar a aplicação
 
-* How to run the test suite
+```shell
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Acessar pelo endereço do seu ambiente, por exemplo:
 
-* Deployment instructions
-
-* ...
+[http://localhost:3000/](http://localhost:3000/)
