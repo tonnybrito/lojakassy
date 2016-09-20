@@ -1,4 +1,6 @@
 class StoreController < ApplicationController
+  before_filter :register_view
+
   def index
     @products = Product.all.shuffle
   end
@@ -13,5 +15,10 @@ class StoreController < ApplicationController
 
   def search
     @products = Product.search(params[:q])
+  end
+
+  private
+  def register_view
+    View.create(remote_ip: request.remote_ip)
   end
 end
