@@ -45,15 +45,9 @@
             <li class="<%= 'active' if controller_name == 'store' && action_name == 'index' %>">
               <%= link_to 'Início', root_path %>
             </li>
-            <li><a href="#">Telefones</a></li>
-            <li><a href="#">Eletrônicos</a></li>
-            <li><a href="#">Quadros</a></li>
-            <li><a href="#">Móveis</a></li>
-            <li><a href="#">Jogos</a></li>
-            <li><a href="#">Computadores</a></li>
-            <li><a href="#">Revistas</a></li>
-            <li><a href="#">Malas</a></li>
-            <li><a href="#">Materiais de construção</a></li>
+            <% Product.categories.each do |category| %>
+              <li><%= link_to category, controller: :store, action: :category, c: category %></li>
+            <% end %>
           </ul>
         </div>
       </div>

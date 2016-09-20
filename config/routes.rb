@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :products
 
   get 'produtos/:id', to: 'store#product'
+  get 'categoria', to: 'store#category'
   # get 'store/index'
 
   root 'store#index'

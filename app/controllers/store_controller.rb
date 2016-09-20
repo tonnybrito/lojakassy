@@ -6,4 +6,8 @@ class StoreController < ApplicationController
   def product
     @product = Product.find(params[:id])
   end
+
+  def category
+    @products = Product.where(category: params[:c]).all
+  end
 end
