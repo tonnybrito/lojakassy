@@ -14,42 +14,42 @@
   <div class="form-group">
     <%= f.label :category, class: 'col-sm-2 control-label' %>
     <div class="col-sm-10">
-      <%= f.text_field :category, class: 'form-control', placeholder: 'Eletrônicos' %>
+      <%= f.text_field :category, class: 'form-control', placeholder: 'Criar Categoria' %>
     </div>
   </div>
 
   <div class="form-group">
     <%= f.label :title, class: 'col-sm-2 control-label' %>
     <div class="col-sm-10">
-      <%= f.text_field :title, class: 'form-control', placeholder: 'Televisor de 24" LED' %>
+      <%= f.text_field :title, class: 'form-control', placeholder: 'Título do item a ser criado' %>
     </div>
   </div>
 
   <div class="form-group">
     <%= f.label :price, class: 'col-sm-2 control-label' %>
     <div class="col-sm-10">
-      <%= f.text_field :price, class: 'form-control', placeholder: '99.99'  %>
+      <%= f.text_field :price, class: 'form-control', placeholder: 'R$ 99.99'  %>
     </div>
   </div>
 
   <div class="form-group">
     <%= f.label :image, class: 'col-sm-2 control-label' %>
     <div class="col-sm-10">
-      <%= f.text_field :image, class: 'form-control', placeholder: 'http://example.com/imagem.jpg'  %>
+      <%= f.file_field :image, class: 'form-control', placeholder: 'Selecionar imagem'  %>
     </div>
   </div>
 
   <div class="form-group">
     <%= f.label :description, class: 'col-sm-2 control-label' %>
     <div class="col-sm-10">
-      <%= f.text_area :description, class: 'form-control', placeholder: 'Essa TV possui uma imagem de excelente qualidade e vem pronta para os serviços de assinatura...'  %>
+      <%= f.text_area :description, class: 'form-control', placeholder: 'Produto em Macramẽ com pedras...'  %>
     </div>
   </div>
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <%= f.submit class: 'btn btn-primary' %>
-      <%= link_to 'Cancelar', products_path, class: 'btn btn-default' %>
+      <%= link_to 'Cancelar', products_path, class: 'btn btn-primary' %>
     </div>
   </div>
 <% end %>

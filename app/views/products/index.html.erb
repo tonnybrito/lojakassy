@@ -1,12 +1,17 @@
 <% if (n = notice).present? %><p class="alert alert-warning"><%= n %></p><% end %>
 
 <h1>
-  Produtos
+  Produtos:
 
   &nbsp;
-  <%= link_to new_product_path, class: 'btn btn-sm btn-default' do %>
+  <%= link_to new_product_path, class: 'btn btn-sm btn-primary' do %>
     <i class="fa fa-plus"></i> Adicionar
   <% end %>
+  <%= link_to root_path, class: 'btn btn-sm btn-primary' do %>
+    <span class="glyphicon glyphicon-home"> Home</span>
+  <% end %>
+
+
 </h1>
 
 <table class="table table-striped">
@@ -30,7 +35,7 @@
           <%= link_to edit_product_path(product), class: 'btn btn-sm btn-primary' do %>
             <i class="fa fa-edit"></i> Editar
           <% end %>
-          <%= link_to product, method: :delete, data: { confirm: 'Você tem certeza de que deseja remover este item?' }, class: 'btn btn-sm btn-danger' do %>
+          <%= link_to product, method: :delete, data: { confirm: 'Você tem certeza de que deseja remover este item?' }, class: 'btn btn-sm btn-primary' do %>
             <i class="fa fa-trash"></i> Remover
           <% end %>
         </td>
@@ -38,3 +43,4 @@
     <% end %>
   </tbody>
 </table>
+

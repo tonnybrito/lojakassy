@@ -1,0 +1,117 @@
+/* logo barra navbar */
+.navbar-brand img {
+  margin-top: 0px;
+  margin-left: -3px;
+  margin-bottom: 5px;
+  border: SaddleBrown 1px solid !important;
+  border-radius: 4px !important;
+  width: 65px;
+  z-index: 1;
+  position: relative;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* font logo navbar */
+.font-logo2 {
+  background-position: center !important;
+  font-weight: bold !important;
+  color: SaddleBrown !important;
+  font-size: 5.5px;
+  margin-top: -24px;
+  margin-left: 3px;
+  font-family: Snell Roundhand, cursive;
+  z-index: 2;
+  position: sticky;
+}
+
+  /* dropdown Nossos Produtos*/
+.dropdown-menu {
+    background-color: white ;
+    padding-left: 25px;
+    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: -16px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.dropdown-toggle {
+  padding-top: 10px;
+}
+
+/* linha menu responsivo mobile */
+.navbar-inverse .navbar-collapse {
+  border: none;
+}
+
+.nav.navbar-nav a {
+  background-color:  white  !important;
+  color: SaddleBrown !important;
+  font-weight: bold;}
+
+.navbar-toggle {
+  background-color: SaddleBrown;
+  border-radius: 7px;
+  margin-top: 23px;
+  padding: 9px 13px;
+  &:active {
+   background-color: oldlace !important;
+  }
+  &:focus {
+  background-color: Saddlebrown !important;
+}  
+}
+
+
+.navbar-fixed-top {
+  height: 101px;
+  background-color: white !important;
+  border: 0px ;
+}
+
+.navbar.navbar ul {
+  width:  705px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 4px;
+  
+}
+.inicio {
+  margin-left: 1px !important;
+}
+
+.collapse.navbar-collapse{
+  background-color:  white !important;
+ border: 0px ;
+ color: black;
+ padding-top: 10px !important;
+
+}
+
+/* Input search menu-top */
+.form-group .form-control.input-lg {
+    background-color: OldLace;
+    width: 160px !important;
+    display: inline-block;
+    border: SaddleBrown 1px solid ;
+    font-size: 14px;
+    padding: 5px;
+    height: 35px;
+    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* button Buscar menu-top*/
+.btn.btn-default {
+  background-color: BurlyWood;
+  font-size: 14px;
+  font-weight: bold;
+  color: SaddleBrown;
+  border: SaddleBrown 1px solid !important ;
+  padding: 7px;
+  height: 35px;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}

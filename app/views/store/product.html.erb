@@ -3,7 +3,7 @@
 
   <div id="product" class="row">
     <div class="col-md-6">
-      <%= image_tag @product.image %>
+      <center ><%= image_tag @product.image, style: 'height:60%; width:60%;' %></center>
     </div>
     <div class="col-md-6">
       <div class="price">
@@ -14,8 +14,29 @@
       </div>
       <div class="description">
         <%= @product.description %>
-      </div>
+      </div><br>
+      <center><%= link_to root_path, class: 'btn btn-sm btn-primary' do %>
+    <span class="glyphicon glyphicon-home"> Home</span>
+  <% end %></center>
+      <hr>
+      <ul class="pagamento" style="list-style: none;">
+        <li>
+            <span style="text-decoration: underline;"><b>Forma de Pagamento: "Deposito via PIX"</b></span>
+        </li>
+        <li>
+            <span class="fontPIX">PIX-Email: <b class="fontCPF">kassybrito@ghoterra.com</b></span>
+        </li>
+        <li>
+            <span class="fontPIX">Nome: <b class="fontCPF">Kassya Karollina Brito</b></span>
+        </li>
+        
+        <li>
+          <span style="text-decoration:  underline; ">Enviar comprovante para (47) 90000-0000<br> e codigo do item solicitado</span><br>
+            <span>Após comprovação de deposito,</span><br>
+            <span>enviaremos o ítem em XXX dias úteis</span>
+        </li>
+    </ul>
+    <hr>
     </div>
-  </div>
+  </div><br>
 </div>
-

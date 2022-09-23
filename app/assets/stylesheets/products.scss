@@ -1,20 +1,86 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+  /* logo main */
+  .navbar-brand-main img {
+  background-position: center;
+  margin-bottom: 5px;
+  border: SaddleBrown 1px solid !important;
+  border-radius: 4px !important;
+  width: 200px;
+  margin-top: 23px;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+/*Font logo Main*/
+.font-logo {
+  background-position: center !important;
+  font-weight: bold !important;
+  color: SaddleBrown !important;
+  font-size: 18px !important;
+  margin-top: -40px;
+  font-family: Snell Roundhand, cursive;
+}
+
+
+a.visible-xs {
+  background-color: rgb(226, 220, 107) !important;
+   color: black;
+}
+
+ul {
+  margin-left: -25px;
+  width: 715px;
+  padding-top: 25px;
+  
+}
+
+
+.meditarte-font-style {
+  font-weight: bold;
+  color: SaddleBrown;
+  margin-top: -25px;
+  background-position: center !important;
+
+}
+.fontCPF {
+  font-size: 1.2em ;
+  color: red;
+}
+
+.fontPIX {
+  font-weight: bold !important ;
+  color: blue;
+}
+
+.pagamento  {
+  font-size: 14px;
+  margin-left: -49px;
+}
+
+
 img.product-image {
-  width: 35px;
-  height: 35px;
+  border-radius: 4px;
+  border: SaddleBrown 1px solid;
+  width: 55px;
+  height: 55px;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 #product {
   img {
     width: 100%;
+    border-radius: 4px;
+    border: SaddleBrown 3px solid;
   }
 
   .price {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     color: #ca3b3a;
+    padding-top: 5px;
   }
 
   .category {
