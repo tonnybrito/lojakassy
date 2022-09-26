@@ -75,6 +75,7 @@ a.btn.btn-danger {
     border-radius: 4px !important;
     border: SaddleBrown 1px solid !important;
     color: SaddleBrown;
+      -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 
     a.btn.btn-danger:hover {
     font-size: 16px;
@@ -83,6 +84,10 @@ a.btn.btn-danger {
     -webkit-text-stroke: 1px black;
     }
      /* button comprar*/
+}
+
+.btn-primary {
+    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -95,6 +100,7 @@ span.label.label-warning {
     color: SaddleBrown;
     border-radius: 4px;
     border: SaddleBrown 1px solid !important;
+    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     /*button category */
 }
 

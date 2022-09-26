@@ -54,16 +54,19 @@
 
 .navbar-toggle {
   background-color: SaddleBrown;
-  border-radius: 7px;
+  border-radius: 4px;
   margin-top: 23px;
   padding: 9px 13px;
+  border:  #f0ad4e 2px solid !important;
+    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   &:active {
    background-color: oldlace !important;
   }
   &:focus {
   background-color: Saddlebrown !important;
-}  
+  }  
 }
+
 
 
 .navbar-fixed-top {
