@@ -15,9 +15,10 @@
 }
 
 #main {
-    padding: 30px 0;
+    padding: 45px 0;
     min-height: 450px;
 }
+
 
 .container {
     display: block;
@@ -77,6 +78,10 @@ a.btn.btn-danger {
     color: SaddleBrown;
       -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 
+    &:active {
+        background-color: saddlebrown ;
+    }  
+
     a.btn.btn-danger:hover {
     font-size: 16px;
     background-color: rgb(226, 220, 107);
@@ -102,6 +107,7 @@ span.label.label-warning {
     border: SaddleBrown 1px solid !important;
     -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     /*button category */
+
 }
 
 #product .price {
@@ -134,6 +140,15 @@ span.label.label-warning {
             border-radius: 4px;
             border: SaddleBrown 2px solid;
             -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            -moz-transition: all 0.3s !important;
+            -webkit-transition: all 0.3s !important;
+            transition: all 0.3s !important;
+            &:hover {
+                -moz-transform: scale(1.99) !important;
+                -webkit-transform: scale(1.99) !important;
+                transform: scale(1.99) !important;
+                border: burlywood 3.5px solid;
+            }
         }
 
         .category {
@@ -144,7 +159,6 @@ span.label.label-warning {
         }
         .buy .btn {
             margin-top: 10px;
-            border-radius: 0;
         }
     }
 }

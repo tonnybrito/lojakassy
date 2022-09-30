@@ -39,6 +39,10 @@
               <li class="inicio" class="<%= 'active' if controller_name == 'store' && action_name == 'index' %>">
                   <%= link_to 'Início', root_path %>
               </li>
+              <li>
+                  <li class="inicio" class="<%= 'active' if controller_name == 'store' && action_name == 'index' %>">
+                  <%= link_to 'Quem Somos', root_path %>
+            </li>
             </li>
             <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nossos Produtos:</a>
@@ -73,9 +77,11 @@
     </div>
     <br>
 
+
     <div id="main">
+
       <br>
-      <center><a class="font_logo"><a class="navbar-brand-main"><%= image_tag('meditart2.jpg') %></a></center>
+      <center class="line-gray"><a class="font_logo"><a class="navbar-brand-main"><%= image_tag('meditart2.jpg') %></a></center>
       <center><div class="font-logo">MeditArte Macramê</div></center>
       <br>
       <%= yield %>

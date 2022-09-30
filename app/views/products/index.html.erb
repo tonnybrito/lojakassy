@@ -29,7 +29,7 @@
       <tr>
         <td><%= image_tag product.image, class: 'product-image' %></td>
         <td><%= product.title %></td>
-        <td><%= number_to_currency product.price %></td>
+        <td>R<%= number_to_currency product.price %></td>
         <td><%= product.category %></td>
         <td nowrap>
           <%= link_to edit_product_path(product), class: 'btn btn-sm btn-primary' do %>

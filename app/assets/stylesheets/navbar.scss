@@ -1,6 +1,6 @@
 /* logo barra navbar */
 .navbar-brand img {
-  margin-top: 0px;
+  margin-top: -7px;
   margin-left: -3px;
   margin-bottom: 5px;
   border: SaddleBrown 1px solid !important;
@@ -26,9 +26,9 @@
 
   /* dropdown Nossos Produtos*/
 .dropdown-menu {
-    background-color: white ;
-    padding-left: 25px;
-    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  background-color: white ;
+  padding-left: 25px;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -54,25 +54,40 @@
 
 .navbar-toggle {
   background-color: SaddleBrown;
-  border-radius: 4px;
-  margin-top: 23px;
-  padding: 9px 13px;
-  border:  #f0ad4e 2px solid !important;
-    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 8px !important;
+  margin-top: 18px;
+  padding: 5px 8px;
+  border:  burlywood 2px solid !important;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+
+  .icon-bar {
+    background-color: burlywood !important;
+  }
+
   &:active {
    background-color: oldlace !important;
   }
+  
   &:focus {
-  background-color: Saddlebrown !important;
-  }  
+    background-color: Saddlebrown !important;
+  }
+
+  &:hover {
+    background-color: BurlyWood !important;
+    border: SaddleBrown 2px solid !important;
+    .icon-bar {
+      background-color: Saddlebrown !important;
+    }
+  }
+    
 }
 
 
 
 .navbar-fixed-top {
-  height: 101px;
+  height: 87px;
   background-color: white !important;
-  border: 0px ;
+  border: lightgray 1px solid;
 }
 
 .navbar.navbar ul {
@@ -95,6 +110,7 @@
 
 }
 
+/*Search and Button Search*/
 /* Input search menu-top */
 .form-group .form-control.input-lg {
     background-color: OldLace;
